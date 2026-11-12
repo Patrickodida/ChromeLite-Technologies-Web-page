@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromelite Technologies Limited | Branding, Signage and Steel Supply</title>
+    <!-- CSS stylesheet -->
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- - id is used for sections that appear ONCE on the page (navbar, sidebar,
+              main-content, footer, about, services, projects, contact).
+              An id must be unique, and it is what the internal links
+              (href="#about") jump to.
+    - class is used for REPEATED elements (nav-item, sidebar-link, service-card,
+              section-card). The same class can be reused on many elements and
+              styled once in the CSS. -->
+    <!-- Navbar section -->
+    <div id="navbar">
+        <a class="logo" href="#navbar">ChromeLite <span>Technologies</span></a>
+        <!-- nav-links -->
+         <ul class="nav-list">
+            <li><a class="nav-item" href="#navbar">Home</a></li>
+            <li><a class="nav-item" href="#about">About Us</a></li>
+            <li><a class="nav-item" href="#services">Our Services</a></li>
+            <li><a class="nav-item" href="#projects">Our Projects</a></li>
+            <li><a class="nav-item" href="#contact">Contact Us</a></li>
+         </ul>
+    </div>
+    <!-- Page Layout section -->
+    <div id="layout">
+        <!-- sidebar - 25% Wide -->
+        <div id="sidebar">
+            <h1>Quick Links</h1>
+            <a class="sidebar-link" href="#about">About Us</a>
+            <a class="sidebar-link" href="#services">Our Services</a>
+            <a class="sidebar-link" href="#projects">Our Projects</a>
+            <a class="sidebar-link" href="#contact">Contact Us</a>
+        </div>
+        <!-- Main content - 70% Wide -->
+        <div id="main-content">
+            <!-- Sub-section 1 - About Us -->
+            <div id="about" class="section-card">
+                <h2>About Us</h2>
+                <p>Chromelite Technologies Limited is a Kampala-based company specialising in branding, signage and structural steel supply. We help businesses, institutions and individuals build a strong visual presence and put up durable structures that stand the test of time.</p>
+                <p>Our team combines creative design with solid engineering know-how. We take pride in quality materials, careful workmanship and on-time delivery, and we work closely with every client from the first idea to the finished product.</p>
+            </div>
+            <!-- Sub-section 2 - Services With Four Service Cards -->
+            <div id="services" class="section-card">
+                <h2>Our Services</h2>
+                <p>We offer a complete range of branding and fabrication services under one roof. Whether you need a shop sign that attracts customers or steel work that supports a building, we handle the job from design to installation.</p>
+                <p>Every service is tailored to your needs, budget and timeline. Explore our core offerings below, or contact us to discuss a custom order.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>signage</h3>
+                        <p>Eye-catching indoor and outdoor signs, from shopfronts to billboards, designed to make your business noticed.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Vehicle Branding</h3>
+                        <p>Durable wraps and decals that turn your cars, trucks and fleet into moving advertisements.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Printing</h3>
+                        <p>Sharp, high-quality printing for banners, stickers, posters, flyers and promotional materials.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Steel Fabrication</h3>
+                        <p>Strong, precisely cut and welded steel structures, built to your specification and delivered on time.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sub-section 3 - Projects -->
+            <div id="projects" class="section-card">
+                <h2>Our Projects</h2>
+                <p>Over the years, we have delivered branding and steel projects for clients across different industries. These include illuminated shopfront signs, full fleet branding for transport and logistics companies, and steel frames for commercial buildings.</p>
+                <p>Each project reflects our commitment to quality and attention to detail. From small business signs to larger structural works, we treat every job as a chance to show what dependable craftsmanship looks like.</p>
+            </div>
+            <!-- Sub-section 4 - Contact -->
+            <div id="contact" class="section-card">
+                <h2>Contact Us</h2>
+                <p>Ready to start your next project or need a quotation? Get in touch with the Chromelite team in Kampala. We are happy to talk through your ideas and recommend the best solution for your business.</p>
+                <p>Call or email us during working hours and we will respond as quickly as possible. We look forward to working with you.</p>
+                <p class="contact-details">
+                    <span class="contact-item">Phone: <a href="tel:+256753112223">+256 753 112 223</a></span>
+                    <span class="contact-item">Email: <a href="mailto:info@chromelitetech.com">info@chromelitetech.com</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer section -->
+    <div id="footer">
+        <p>&copy; <span id="year">2026</span>Chromelite Technologies Limited. All rights reserved.</p>
+    </div>
+    <script>
+    document.getElementById("year").textContent= new Date().getFullYear()
+    </script>
+</body>
+</html>
